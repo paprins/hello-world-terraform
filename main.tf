@@ -1,5 +1,13 @@
 terraform {
-  required_version = ">= 0.12.26"
+  required_version = ">= 1.1.0"
+  cloud {
+    hostname = "app.terraform.io"
+    organization = "terraform-controller-demo"
+
+    workspaces {
+      name = "example"
+    }
+  }
 }
 
 variable "subject" {
