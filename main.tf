@@ -12,7 +12,7 @@ terraform {
 
 variable "subject" {
    type = string
-   default = "audience"
+   default = "demo"
    description = "Subject to hello"
 }
 
